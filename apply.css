@@ -15,8 +15,8 @@
 
 
 .container{
-    min-height: 125vh;
-    background:var(--dim-blue);
+   
+    
     position: relative;
 }
 
@@ -52,7 +52,9 @@ nav{
     border: 0;
     margin: 0 5px;
 }
-
+.form-box{
+    width: 100%;
+}
 .login-in-btn{
     border: 1px solid var(--dark-blue) !important;
     background: transparent;
@@ -92,40 +94,74 @@ nav{
     color: var(--light-blue);
 }
 
-.login-con-top{
-    width: 100%;
-    
-}
-
-.login-con-inner-div{
-    width:80%;
-    margin: auto;
-}
 
 h2{
-    color: var(--dark-blue);
+    color: var(--light-blue);
+    padding: 5px;
+}
+
+form{
+    padding: 20px;
+    z-index: -1;
+    
 }
 
 .form-box{
+        width: 100%;
+        padding: 100px 0 100px 0;
+        position: relative;
+       /*background:#25384d;*/
+        color: #fff;
+        background:var(--dim-blue);
     
+    }
+.form-value{
+    width: 70%;
+    margin: auto;
+    position: relative;
+   
+}
+
+.glow::before , .glow::after{
+    content: '';
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -54%);
-    border-left: 1px solid var(--dark-blue);
-    border-right: 1px solid var(--dark-blue);
-    
-    background:var(--dim-blue);
-    z-index: 10;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg,#e6fb04,#ff6600,#00ff66,#00ffff,#ff00ff,#ff0099,#6e0dd0,#ff3300,#099fff);
+    background-size: 400%;
+    width: calc(100% + 1px);
+    height: calc(100% + 1px);
+    z-index: 0;
+    animation:animate 20s linear infinite;
+}
+.inner-div{
+    z-index: 1000;
+    position: relative;
+    background-color: var(--light-blue);
+   
     
 }
-.form-value{
-    padding: 20px 40px;
+
+@keyframes animate{
+    0% {
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.glow::after{
+    filter: blur(40px);
+    
 }
 
 .form-act-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+   z-index: -3;
     
 }
 
@@ -134,105 +170,120 @@ h2{
 }
 .form-act-details input{
     padding: 10px 15px;
-    width: 90%;
+    width: 80%;
     border: 0;
     outline: 0;
     transition: .5s;
-    
+    background:transparent;
+    border: 1px solid #336077;
+    border-bottom: 3px solid #336077;
+    caret-color: #000;
+    color: #000 !important;
+    opacity: 0.5;
+    font-size: 15px;
+    border-radius: 10px;
 }
-.form-act-details input:focus , .Feed-back textarea:focus {
-border:1px solid var(--dark-blue);
-scale: 1.1;
+
+.form-act-details input:focus , .form-act-details textarea{
+    opacity: 1;
+    border: 3px solid var(--dark-blue);
 }
+
+::placeholder{
+    color: #777;
+}
+
 .inputbox{
     padding: 10px;
+    color: #000;
+    line-height: 2;
 }
 
 .send-message{
     width: 100%;
     text-align: center;
+    
 }
 .send-message button{
     padding: 10px 20px;
     color: var(--light-blue);
-    background:var(--dark-blue);
-    outline: 0;
+    background:#56b3df;
+    outline: 0 ;
     border: 0;
     cursor: pointer;
     transition: .5s;
+    border-radius: 10px;
+
 }
 
 .btn:hover{
     scale: 1.1;
-    
 }
 
-.Feed-back textarea{
+.inputbox textarea{
     border: 0;
     outline: 0;
     transition:.5s;
     margin-top: 10px;
     padding: 10px;
+    background:transparent;
+    border: 1px solid #336077;
+    border-bottom: 2px solid #336077;
+    caret-color: #000;
+    color: #000;
 }
 
-@media screen and (max-width:678px) {
-    .apply-now-div{
-        padding: 10px;
-    }
-    .form-box{
-       min-width: 400px;
-       
-    }
-    .form-value{
-        padding: 0!important;
-    }
+@media  screen and (max-width: 968px) {
     .form-act-details{
         grid-template-columns: repeat(1,1fr);
+        overflow: hidden;
     }
-    .inputbox input {
-        padding: 10px;
-        width: 50%;
-        font-size: 10px;
+    .form-box{
+        overflow: hidden;
+    }
+    .form-value{
+        padding: 0 0 0 0;
+        
     }
     form{
-       text-align: center ;
+        padding: 10px 10px;
     }
-    .Feed-back textarea{
-       width: 340px;
-       height: 150px;
+    .inputbox{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
     }
-
-    .testimonial{
-        font-size: 10px;
-    }   
+     .inputbox label{
+        padding: 3px;
+    }
+    .inputbox textarea{
+        width: 100%;
+    }
 }
 
-/*testimonial section*/
+/*testimonial*/
 
 .testimonial{
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    padding: 30px;
-    background: var(--dark-blue);
-    color:var(--light-blue);
-    text-align: center;
+    background:var(--dark-blue);
+    color: var(--light-blue);
+    padding: 20px;
 }
 
 .sub-test{
-    width: 90%;
+    width: 80%;
     margin: auto;
-    line-height: 2;
+    line-height:1.5;
+    text-align: center ;
+
 }
+
 .sub-test button{
     padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
     border: 0;
-    background:var(--dark-blue);
-    color: var(--light-blue);
-    border-radius: 5px;
-    transform: translateY(10px);
-    transition: .5s;
+    outline: 0;
+    
 }
-.sub-test button:hover{
-    scale: 1.1;
-}
+
