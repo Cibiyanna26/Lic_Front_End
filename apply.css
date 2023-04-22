@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+:root{
+    --dark-blue:#2A2F4F;
+    --light-blue:#ECF2FF;
+    --dim-blue:#DAF5FF;
+}
+
+
+.container{
+    min-height: 125vh;
+    background:var(--dim-blue);
+    position: relative;
+}
+
+/*the navbar of the apply form*/
+
+.nav-bar{
+    width: 100%;
+    padding: 10px;
+    background:var(--light-blue);
+    border: 1px solid #000;
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+nav{
+    margin: auto;
+    width: 80%;
+}
+
+.nav-row{
+    display: flex;
+    justify-content: space-between;
+}
+.right-side{
+    border-left:1px solid var(--dark-blue);
+    padding: 10px;
+}
+.right-side button{
+    padding: 10px 20px;
+    font-size:15px;
+    cursor: pointer;
+    color: var(--dark-blue);
+    outline: 0;
+    border: 0;
+    margin: 0 5px;
+}
+
+.login-in-btn{
+    border: 1px solid var(--dark-blue) !important;
+    background: transparent;
+    transition: 0.5s;
+    
+}
+.login-in-btn:hover{
+    background:var(--dark-blue);
+    color: var(--light-blue);
+    scale: 1.1;
+}
+
+.back-btn{
+    background:var(--dark-blue);
+    color: var(--light-blue) !important;
+    transition: 0.5s;
+}
+.back-btn:hover{
+    border: 1px solid #D23369 !important;
+    background: transparent;
+    color: var(--dark-blue) !important;
+    scale: 1.1s;
+}
+@media screen and (max-width: 768px) {
+    .back-btn , .login-in-btn{
+        padding: 5px 10px !important;
+        font-size: 10px !important;
+    }
+
+}
+/*the apply form list*/
+
+.apply-now-div{
+    padding: 20px;
+    text-align: center;
+    background: var(--dark-blue);
+    color: var(--light-blue);
+}
+
+.login-con-top{
+    width: 100%;
+    
+}
+
+.login-con-inner-div{
+    width:80%;
+    margin: auto;
+}
+
+h2{
+    color: var(--dark-blue);
+}
+
+.form-box{
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -54%);
+    border-left: 1px solid var(--dark-blue);
+    border-right: 1px solid var(--dark-blue);
+    
+    background:var(--dim-blue);
+    z-index: 10;
+    
+}
+.form-value{
+    padding: 20px 40px;
+}
+
+.form-act-details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.form-act-details label{
+    display: block;
+}
+.form-act-details input{
+    padding: 10px 15px;
+    width: 90%;
+    border: 0;
+    outline: 0;
+    transition: .5s;
+    
+}
+.form-act-details input:focus , .Feed-back textarea:focus {
+border:1px solid var(--dark-blue);
+scale: 1.1;
+}
+.inputbox{
+    padding: 10px;
+}
+
+.send-message{
+    width: 100%;
+    text-align: center;
+}
+.send-message button{
+    padding: 10px 20px;
+    color: var(--light-blue);
+    background:var(--dark-blue);
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn:hover{
+    scale: 1.1;
+    
+}
+
+.Feed-back textarea{
+    border: 0;
+    outline: 0;
+    transition:.5s;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width:678px) {
+    .apply-now-div{
+        padding: 10px;
+    }
+    .form-box{
+       min-width: 400px;
+       
+    }
+    .form-value{
+        padding: 0!important;
+    }
+    .form-act-details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .inputbox input {
+        padding: 10px;
+        width: 50%;
+        font-size: 10px;
+    }
+    form{
+       text-align: center ;
+    }
+    .Feed-back textarea{
+       width: 340px;
+       height: 150px;
+    }
+
+    .testimonial{
+        font-size: 10px;
+    }   
+}
+
+/*testimonial section*/
+
+.testimonial{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    background: var(--dark-blue);
+    color:var(--light-blue);
+    text-align: center;
+}
+
+.sub-test{
+    width: 90%;
+    margin: auto;
+    line-height: 2;
+}
+.sub-test button{
+    padding: 10px 20px;
+    border: 0;
+    background:var(--dark-blue);
+    color: var(--light-blue);
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: .5s;
+}
+.sub-test button:hover{
+    scale: 1.1;
+}
