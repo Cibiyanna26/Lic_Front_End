@@ -181,7 +181,7 @@ ion-icon{
     
     }
     .w-nav-link:hover{
-        border-bottom: 2px solid var(--light-blue);
+        border-bottom: 2px solid #2C74B3;
     }
     ion-icon{
         display: block;
