@@ -154,14 +154,14 @@ form{
     }
 }
 .glow::after{
-    filter: blur(40px);
+    filter: blur(5px);
     
 }
 
 .form-act-details{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-   z-index: -3;
+    z-index: -3;
     
 }
 
@@ -259,8 +259,17 @@ form{
     .inputbox textarea{
         width: 100%;
     }
+    .form-value{
+        width: 90%;
+    }   
+    h1{
+        font-size:14px;
+    }
+    p{
+        font-size: 10px;
+    }
+    
 }
-
 /*testimonial*/
 
 .testimonial{
@@ -284,6 +293,17 @@ form{
     border-radius: 10px;
     border: 0;
     outline: 0;
+    background:#56b3df;
+    color: var(--light-blue);
+    transition: .5s;
     
 }
+.sub-test button:hover{
+    scale: 1.1;
+}
 
+@media  screen  and (max-width:768px){
+    .sub-test button{
+        padding: 5px 10px;
+    }
+}
