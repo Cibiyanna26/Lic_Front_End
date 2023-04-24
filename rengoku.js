@@ -17,10 +17,10 @@ function showmenu(element){
 const sub_menu = document.querySelector(".tut-flex-2");
 
 function show(){
-  sub_menu.style.right="360px";
+  sub_menu.style.right="0";
 }
 function hide(){
-  sub_menu.style.right="-400px";
+  sub_menu.style.right="-200px";
 }
 
 // slide code
