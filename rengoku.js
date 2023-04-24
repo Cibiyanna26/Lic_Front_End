@@ -17,7 +17,7 @@ function showmenu(element){
 const sub_menu = document.querySelector(".tut-flex-2");
 
 function show(){
-  sub_menu.style.right="400px";
+  sub_menu.style.right="360px";
 }
 function hide(){
   sub_menu.style.right="-400px";
@@ -33,6 +33,33 @@ function plusDivs(n) {
   showDivs(slideIndex += n);
 }
 
+/*let slider_img = document.getElementsByClassName("myslides");
+let i = 0;
+function show_slide_img(){
+  if(i==3){
+    i = 0;
+  }
+  for(i = 0;i<slider_img.length;i++){
+    slider_img[i].style.display = "none";
+  }
+  slider_img[i].style.display = "block" ;
+  i+=1;
+}*/
+let slider_img = document.getElementsByClassName("myslides");
+let v = 0;
+function change_image(){
+  if(v==3){
+    v = 0;
+  }
+  for(let i=0;i<slider_img.length;i++){
+    slider_img[i].style.display = "none";
+  }
+  slider_img[v].style.display = "block";
+  v+=1;
+}
+
+
+
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("myslides");
@@ -43,3 +70,5 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+
+setInterval(change_image,2000);

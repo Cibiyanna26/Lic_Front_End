@@ -368,6 +368,7 @@ ion-icon{
         background:#2A2F4F;
         color: white;
     }
+    
 
     .slider-apply-now{
         padding: 20px;
@@ -375,7 +376,7 @@ ion-icon{
         justify-content: end;
         background:#2A2F4F;
     }
-
+    
    .slider-apply-now h1{
         padding: 20px;
         
@@ -659,12 +660,16 @@ ion-icon{
         border-top: 5px solid #635985;
     }
     @media screen and (max-width:678px) {
+        .card-container{
+            width: 100%;
+        }
         .card-row{
             grid-template-columns: repeat(1,1fr) !important;
             
         }
         .card-box-content{
             font-size: 9px!important;
+            
         }
         
         .card-col{
