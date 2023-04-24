@@ -173,7 +173,7 @@ ion-icon{
         flex-direction: column !important;
         position: absolute;
         top: 50px;
-        right: -400px;
+        right: -460px;
         height: 40vh;
         width: 400px;
         background: var(--dark-blue);
