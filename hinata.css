@@ -177,7 +177,7 @@ ion-icon{
         right: -440px;
         height: 40vh;
         width: 400px;
-        background: #fff;
+        background: var(--dim-blue);
         
     
     }
@@ -191,11 +191,13 @@ ion-icon{
      left: 20px;
      top: 30px;
      cursor: pointer;
+     color: #fff;
+     background: var(--dark-blue);
     }
     #four{
        transform: translateY(-10px);
        right: 20px;
-       top: 30px;
+       top: 40px;
        cursor: pointer;
     }
 
