@@ -122,7 +122,8 @@ margin-left: auto;
 margin-right: auto;
 }
 .w-nav-link:hover{
-    border-bottom: 2px solid #2C74B3;
+    border: 2px solid #2C74B3;
+
 }
 
 .tut-nav-sub-item{
@@ -136,7 +137,7 @@ margin-right: auto;
 }
 .tut-nav-sub-item a{
     padding: 10px;
-    border-bottom: 1px solid var(--dark-blue);
+    border: 1px solid var(--dark-blue);
     color:var(--dark-blue) !important;
 }
 .tut-nav-sub-item a:hover{
