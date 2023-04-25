@@ -17,7 +17,7 @@ function showmenu(element){
 const sub_menu = document.querySelector(".tut-flex-2");
 
 function show(){
-  sub_menu.style.right="400px";
+  sub_menu.style.right="405px";
 }
 function hide(){
   sub_menu.style.right="-400px";

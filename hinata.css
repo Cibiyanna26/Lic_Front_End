@@ -168,6 +168,7 @@ ion-icon{
     .tut-flex-2{
         position: relative;
         transition: 1s !important;
+        
     }
     .w-nav-menu{
         flex-direction: column !important;
@@ -176,8 +177,8 @@ ion-icon{
         right: -440px;
         height: 40vh;
         width: 400px;
-        background: var(--dark-blue);
-       
+        background: #fff;
+        
     
     }
     .w-nav-link:hover{
