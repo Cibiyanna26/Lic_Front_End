@@ -32,6 +32,7 @@ a{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(
         assests/istockphoto-1311598658-170667a.jpg
 );
+
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
@@ -103,7 +104,7 @@ a{
 
 .tut-nav__link{
     padding: 1em 1.5em;
-    color:#2C74B3 !important;
+    color:#2C74B3;
     font-size: 15px;
     font-weight: 600;
     background: transparent;
@@ -112,14 +113,14 @@ a{
 
 .w-nav-link{
     position: relative;
-display: inline-block;
-vertical-align: top;
-text-decoration: none;
-color: #222222;
-padding: 20px;
-text-align: left;
-margin-left: auto;
-margin-right: auto;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #222222;
+    padding: 20px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
 }
 .w-nav-link:hover{
     border-top: 0 !important;
@@ -164,38 +165,52 @@ ion-icon{
         z-index: 0;
         overflow-x: hidden;
     }
-    .tut-nav{
-        padding: 10px;
-    }
-    .tut-flex-2{
-        position: relative;
-        transition: 1s !important;
-        
-    }
     .w-nav-menu{
         flex-direction: column !important;
         position: absolute;
-        top: 50px;
-        right: -440px;
-        height: 40vh;
-        width: 400px;
-        background: var(--dim-blue);
-        
-    
+        top: 0;
+        right: -200px;
+        height: 100vh;
+        width: 200px;
+        background: var(--dark-blue);
+        color: var(--light-blue) !important;
+        z-index: 2;
+        transition: .8s;
+        border: 2px solid var(--light-blue);
+    }
+    .tut-nav__link{
+        color: var(--light-blue) !important;
     }
     .w-nav-link:hover{
-        border-bottom: 2px solid #2C74B3;
+        border-bottom: 2px solid var(--light-blue) !important;
+        border:0;
+        border-width: 80%;
     }
     ion-icon{
         display: block;
     }
+    .tut-nav-sub-item{
+        z-index: 2;
+        top: 60px;
+        left: 54px;
+        height: 100px;
+    }
+    .tut-nav-sub-item button{
+        padding: 5px;
+    }
     #close{
      left: 20px;
-     top: 30px;
+     top: 20px;
      cursor: pointer;
-     color: #fff;
-     background: var(--dark-blue);
+     color: var(--light-blue);
+   
     }
+    #close:hover{
+        background:var(--light-blue);
+        color: var(--dark-blue);
+        border-radius: 100%;
+    }
+
     #four{
        transform: translateY(-10px);
        right: 20px;
@@ -559,7 +574,7 @@ ion-icon{
     }
     
     /*for tablet screen*/
-    @media screen and (max-width: 960px) {
+    @media screen and (max-width: 1200px) {
         .content-part{
             flex-direction: column !important;
             justify-content: center;
@@ -572,9 +587,11 @@ ion-icon{
         }
         .col-cont-1 h1{
             font-size: 18px;
+            margin-bottom: 10px;
         }
         .content-part .cont-col{
-            font-size: 13px;
+            font-size: 14px;
+            font-weight: 500;
         }
         .success-img{
             width: 15px;
@@ -641,7 +658,7 @@ ion-icon{
         
         box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
         transition: .5s;
-        font-size: 12px;
+        font-size: 13px;
         font-weight: 400;
     }
     .card-box-content:hover{
@@ -664,6 +681,12 @@ ion-icon{
     .card-box-4{
         border-top: 5px solid #635985;
     }
+    @media screen and (max-width:968){
+        .card-col{
+            font-size: 10px;
+        }
+    }
+
     @media screen and (max-width:678px) {
         .card-container{
             width: 100%;

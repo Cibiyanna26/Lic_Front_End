@@ -184,7 +184,7 @@ form{
     border-radius: 10px;
 }
 
-.form-act-details input:focus , .form-act-details textarea{
+.form-act-details input:focus , .form-act-details textarea:focus{
     opacity: 1;
     border: 3px solid var(--dark-blue);
 }
@@ -229,8 +229,10 @@ form{
     background:transparent;
     border: 1px solid #336077;
     border-bottom: 2px solid #336077;
+    border-radius: 10px;
     caret-color: #000;
     color: #000;
+    width: 80%;
 }
 
 @media  screen and (max-width: 968px) {
@@ -257,7 +259,7 @@ form{
         padding: 3px;
     }
     .inputbox textarea{
-        width: 100%;
+        width: 80%;
     }
     .form-value{
         width: 90%;

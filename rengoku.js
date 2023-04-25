@@ -14,13 +14,13 @@ function showmenu(element){
     sub_items.classList.add("invisible");
   }
 }
-const sub_menu = document.querySelector(".tut-flex-2");
+const sub_menu = document.querySelector(".w-nav-menu");
 
 function show(){
-  sub_menu.style.right="405px";
+  sub_menu.style.right="0";
 }
 function hide(){
-  sub_menu.style.right="-400px";
+  sub_menu.style.right="-200px";
 }
 
 // slide code
