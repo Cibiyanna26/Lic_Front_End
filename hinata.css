@@ -173,7 +173,7 @@ ion-icon{
         flex-direction: column !important;
         position: absolute;
         top: 50px;
-        right: -400px;
+        right: -440px;
         height: 40vh;
         width: 400px;
         background: var(--dark-blue);
@@ -235,7 +235,7 @@ ion-icon{
 .column-lic-agent{
    flex-basis: 50%;
     padding: 10px;
-    transform: translateX(5%)
+    transform: translateX(5%);
 }
 
 .column-lic-agent h1{
