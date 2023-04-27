@@ -250,7 +250,7 @@ form{
 
 @media  screen and (max-width: 968px) {
     .container{
-        min-height: 125vh;
+        min-height: 100vh;
     }
     .form-act-details{
         grid-template-columns: repeat(1,1fr);
