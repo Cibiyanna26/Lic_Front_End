@@ -103,9 +103,16 @@ nav{
     .left-side, .right-side{
         display: none;
     }
+    .center-side{
+        color: var(--light-blue);
+    }
+    .nav-bar{
+        background-color: var(--dark-blue) !important;
+        color: var(--light-blue) !important;
+    }
     .nav-row{
         padding: 10px;
-    }
+        }
     .nav-col{
         flex-basis: 100%;
     }
