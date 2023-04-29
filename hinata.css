@@ -159,7 +159,7 @@ ion-icon{
     display: none;
 }
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 968px) {
     .header{
         position: relative!important;
         z-index: 0;
@@ -319,10 +319,10 @@ ion-icon{
     .column-lic-agent{
         flex-basis: 100%;
     }
-    .column-lic-agent h1 span{
-        font-size: 30px !important;
+    .left .sub-item span{
+        font-size: 25px;
     }
-
+    
     .column-lic-agent h4, .column-lic-agent p{
         font-size: 14px;
     }
@@ -604,7 +604,6 @@ ion-icon{
     @media screen and (max-width: 760px) {
         .col-cont-2{
             width: 100%;
-           
         }
         .content-part h1, .cont-col h1{
             font-size: 13px;
@@ -627,7 +626,6 @@ ion-icon{
     /*card section*/
     .card{
         width: 100%;
-        
         position: relative;
         z-index: 10;
     }
@@ -669,7 +667,7 @@ ion-icon{
     }
 
     .card-box-1 {
-        border-top: 5px solid #00425A !important;        
+        border-top: 5px solid #00425A;        
     }
     
     .card-box-2{
@@ -681,22 +679,25 @@ ion-icon{
     .card-box-4{
         border-top: 5px solid #635985;
     }
-    @media screen and (max-width:968){
+    /* @media screen and (max-width:968){
+        .card-row{
+            grid-template-columns: repeat(1,1fr) !important;  
+        }
         .card-col{
             font-size: 10px;
         }
-    }
+    } */
 
-    @media screen and (max-width:678px) {
+    @media screen and (max-width:978px) {
         .card-container{
-            width: 100%;
+            
         }
         .card-row{
             grid-template-columns: repeat(1,1fr) !important;
             
         }
         .card-box-content{
-            font-size: 9px!important;
+            font-size:12px !important;
             
         }
         
@@ -705,13 +706,18 @@ ion-icon{
            
         }
         .card-col h3{
-            font-size: 12px;
+            font-size: 20px;
         }
         .card{
             margin-bottom:0 !important;
         }
         .card-col-2 , .card-col-1{
             margin-bottom: 0!important;
+        }
+        .card-box-content{
+            display: flex;
+            justify-self: center;
+            align-items: center;
         }
     }
     /*for external website*/
