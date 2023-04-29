@@ -45,7 +45,7 @@ function show_slide_img(){
   slider_img[i].style.display = "block" ;
   i+=1;
 }*/
-let slider_img = document.getElementsByClassName("myslides");
+let slider_img = document.querySelectorAll(".myslides");
 let v = 0;
 function change_image(){
   if(v==3){
@@ -62,7 +62,7 @@ function change_image(){
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("myslides");
+  var x = document.querySelectorAll(".myslides");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
