@@ -17,7 +17,7 @@
 .container{
     
     position: relative;
-   
+    background-image: linear-gradient(5deg,#fff 0%,#f5f5f5 100%)!important;
     /* background-image: url(assests/holi-color-background-white-background.jpg);
     background-repeat: no-repeat ;
     background-size: cover ; */
@@ -334,6 +334,196 @@ form{
     }
     
 }
+
+/*lic-plan*/
+
+.lic-plan{
+    width: 100%;
+    padding: 50px;
+    background:#3E54AC;
+    color: #fff;
+    margin-bottom:5%;
+}
+
+.lic-plan-container{
+    width: 70%;
+    margin: auto;
+}
+
+
+.lic-plan-row{
+    display:flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+.lic-plan-col{
+    flex-basis: 44%;
+}
+.plan-1 h1{
+    font-size:2em;
+}
+.plan-1{
+    line-height: 2;
+}
+
+.collap{
+    position:relative;
+    background:#fff;
+    color:var(--dark-blue);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+    border-bottom: 1px solid var(--dark-blue);
+}
+
+.plus{
+    display: block;
+}
+.close{
+    display: none;
+}
+
+ion-icon{
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+
+.active , .collap:hover {
+    background: var(--dim-blue);
+    display: block;
+    
+}
+.active > .plus{
+    display: none;
+}
+.active > .close{
+    display: block ;
+}
+
+.collap-content{
+    padding: 20px 18px;
+    display: none;
+    overflow: hidden;
+    background:#fff;
+    color: var(--dark-blue);    
+}
+
+@media screen and (max-width: 968px){
+    .lic-plan{
+        padding: 15px;
+    }
+    .lic-plan-container{
+        width: 90%;
+    }
+    .lic-plan-row{
+        flex-direction:column;
+    }
+    .lic-plan-col{
+        margin-bottom: 20px;
+        
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    .lic-plan{
+        padding: 10px;
+    }
+    .lic-plan-container{
+        width: 100%;
+    }
+    .lic-plan-row{
+        flex-direction: column;
+    }
+    .plan-1{
+        margin-bottom: 30px;
+    }
+    .collap{
+        padding: 10px;
+    }
+    .lic-plan.plan-1 h1{
+        font-size: 15px;
+    }
+    ion-icon{
+        top:18px;
+    }
+
+}
+
+/*featured policies*/
+
+.f-policy{
+    width: 100%;
+    position: relative;
+    margin-bottom:5%;
+    padding: 30px 0;
+}
+
+.f-policy-container{
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+
+.f-policy-row{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.f-policy-col{
+    position: relative;
+    margin-top: 50px;
+}
+
+.f-policy-col1 h2{
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.f-policy-col a{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    text-decoration: none;
+    
+    
+}
+
+.f-policy-col1{
+    width: 80%;
+    padding: 10px;
+    border: 1px solid var(--dark-blue);
+    box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+    transition: 1s; 
+}
+.f-policy-col1:hover{
+    scale:1.1;
+}
+.f-policy-col1 img{
+    width: 100%;
+}
+
+@media screen and (max-width: 968px){
+    .f-policy-row{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 678px){
+    .f-policy-row{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
 /*testimonial*/
 
 .testimonial{
