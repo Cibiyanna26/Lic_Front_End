@@ -272,7 +272,11 @@ form{
 
 @media  screen and (max-width: 678px) {
     .container{
+<<<<<<< HEAD
         
+=======
+        min-height: 100vh;
+>>>>>>> 34b6a77b39aa7aafc4f14ce62abe5112fdcf8523
     }
     .form-act-details{
         grid-template-columns: repeat(1,1fr);
